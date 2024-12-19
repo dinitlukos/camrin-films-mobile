@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBE0Lvb_MzDQmpZlA896ge6P64oDF_E3w8",
-  authDomain: "dh-wedding-reception.firebaseapp.com",
-  projectId: "dh-wedding-reception",
-  storageBucket: "dh-wedding-reception.firebasestorage.app",
-  messagingSenderId: "221663583843",
-  appId: "1:221663583843:web:ed3b217c3a3a342b206256"
+  apiKey: process.env.EXPO_PUBLIC_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_APP_ID
 };
 
 // Initialize Firebase
